@@ -1,0 +1,23 @@
+@keyframes fadein{
+    0%{
+        opacity:0;
+        
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes moveinleft{
+    0%{
+        opacity:0;
+        transform:translateX(25px);
+    }
+    50%{
+        transform:translateX(5px);
+
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}

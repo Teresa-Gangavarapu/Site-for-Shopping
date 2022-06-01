@@ -1,0 +1,41 @@
+.section-about{
+    background-image:linear-gradient(to right,$color4,$color-teritary); 
+    padding:40rem 0;
+    
+}
+.section-card{
+   margin-top:-10rem;
+    background-image:linear-gradient(to bottom,$color-violet,$color-secondary);
+    background-size: cover;
+   height: 120vh;
+  
+   
+ 
+   
+}
+.section-items{
+    background-image:linear-gradient(to right,$color4,$color-teritary); 
+    height: 225vh;
+    
+    
+}
+.section-review{
+   // background-image:linear-gradient(to bottom,$color-violet,$color-secondary);
+  //  background-size: cover;
+  position: relative;
+   height: 135vh;
+}
+.section-users{
+    margin-top:-1rem;
+    background-image: url(images/shopping.jpg);
+    background-size: cover;
+    opacity: .7;
+    height:130vh;
+    position: relative;
+    padding:15rem 0;
+}
+.footer{
+    background-color:black;
+    height:80vh;  
+   
+}

@@ -1,0 +1,22 @@
+//color
+$color-primary:#D3D3D3;
+$color-secondary:#CE46BC;
+$color-teritary:lighten(blue,30%);
+$color2:darken(#0101DF,50%);
+$color3:lighten(#0101DF,30%);
+$color4:lighten($color-secondary,30%);
+$color5:darken($color-secondary,30%);
+$color-violet:lighten(#4930bb,30%);
+$color-violet-dark:rgba(54, 18, 217, 0.9);
+$color-first:#ce2cbb;
+$color-second:#2B6ACF;
+$color-orange: rgba(206, 41, 9, 1);
+$color-light-orange:rgba(250, 54, 15, 1);
+$color-light-green:rgba(50, 245, 20, 1);
+$color-green:rgba(28, 166, 7, 1);
+$color-blue:rgba(67, 41, 174, 1);
+$color-light-blue:rgba(96, 74, 186, 1);
+//grid
+$grid-width:114rem;
+$gutter-vertical:10rem;
+$gutter-horizontal:6rem;

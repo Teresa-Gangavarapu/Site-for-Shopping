@@ -1,0 +1,119 @@
+.card-rect{
+  
+   transform :skewX(-15deg);
+   
+    &__1{
+            
+    width:90%;
+    display: inline-block;
+    background-image:linear-gradient(to left,rgba($color-green,.7),rgba($color-light-green,.8));
+    padding:5rem;
+    margin-bottom: 6rem;
+    border-radius:4px;
+    box-shadow: 1rem 1rem 3rem lighten(black,30%);
+   
+    &--picture{
+        height:15rem;
+        width:15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+       -webkit-clip-path:circle(50% at 50% 50%);
+       clip-path:circle(50% at 50% 50%);
+        background-color:red;
+        margin-right: 4rem;
+        position: relative;
+        transform :skewX(15deg);
+    }
+    &--image-1{
+        height:100%;
+        width: 100%;
+        transform:translateX(.7rem), skewX(15deg) ;
+       // transition: all .4s;
+    }
+    &--details{
+        font-size: 2rem;
+       color:white;
+        font-weight: 10;
+        transform :skewX(15deg);
+    }
+    &--caption{
+        position: absolute;
+        
+      top: 35%;
+    left: 6.5%;
+    transform: skewX(15deg);
+    text-align: center;
+      opacity: 0;
+        color:white;
+        backface-visibility: hidden;
+        text-transform: uppercase;
+        font-weight: 8;
+        transition: all .4s;
+    }
+    &:hover &--caption{
+          opacity: 1;
+          //transform:translateY(-.1rem);
+    }
+    &:hover &--image-1{
+        filter:blur(5px) brightness(80%);
+    }
+    }
+    &__2{
+       
+        width:90%;
+        display: inline-block;
+        background-image:linear-gradient(to left,rgba($color-blue,.7),rgba($color-light-blue,.8));
+        padding:5rem;
+        border-radius:4px;
+        box-shadow: 1rem 1rem 3rem lighten(black,30%);
+       
+        &--picture{
+            height:15rem;
+            width:15rem;
+            float: left;
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+           -webkit-clip-path:circle(50% at 50% 50%);
+           clip-path:circle(50% at 50% 50%);
+            background-color:red;
+            margin-right: 4rem;
+            position: relative;
+            transform :skewX(15deg);
+        }
+        &--image-1{
+            height:100%;
+            width: 100%;
+            transform:translateX(.7rem), skewX(15deg) scale(1) ;
+          
+        }
+        &--details{
+            font-size: 2rem;
+            color:white;
+            font-weight: 10;
+            transform :skewX(15deg);
+        }
+        &--caption{
+            position: absolute;
+            
+          top: 45%;
+        left: 5.8%;
+        transform: skewX(15deg);
+        text-align: center;
+          opacity: 0;
+            color:white;
+            backface-visibility: hidden;
+            text-transform: uppercase;
+            font-weight: 8;
+            transition: all .4s;
+        }
+        &:hover &--caption{
+              opacity: 1;
+             // transform:translateY(-.1rem);
+        }
+        &:hover &--image-1{
+            filter:blur(5px) brightness(80%);
+        }
+    }
+   
+}

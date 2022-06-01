@@ -1,0 +1,103 @@
+.card{
+    perspective: 150rem;
+    position: relative;
+    height: 30rem;
+    margin-top:-5rem;
+   
+    &__side{
+        
+        position: absolute;
+        
+        width:85%;
+        backface-visibility: hidden;
+        transition: all .8s ease;
+        
+        overflow:hidden;
+        box-shadow: 1rem 1rem 2rem rgba($color-violet-dark,0.8);
+        &--front{
+            height:50rem;
+            border-radius: 5px;
+            background-color:#ec55dd;
+        }
+       &--back{
+            height:23rem;
+            margin-top:30rem;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+          //  transform: rotateY(180deg);
+            &-1{
+                background-image: linear-gradient(to bottom ,$color-first,$color-second);
+            }
+            &-2{
+                background-image: linear-gradient(to bottom,#37eb55,#EBAE36);
+            }
+            &-3{
+                background-image: linear-gradient(to bottom,#eb3737,#9036EB);
+            }
+        }
+        
+    }
+   // &:hover &__side--front{
+     //   transform: rotateY(-180deg);
+  //  }
+    &:hover &__side--back{
+        transform:translateY(-15rem);
+        z-index:10;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+
+    }
+    &__picture{
+        background-size: cover;
+        height:60%;
+        background-blend-mode: screen;
+        &--1{
+            background-image: url(images/buddha.jpg);
+        }
+        &--2{
+            background-image: url(images/shoe.jpg);
+            
+        }
+        &--3{
+            background-image: url(images/videogame.jpg);
+        }
+    }
+    &__details{
+        color:white;
+        text-transform: uppercase;
+        font-size:2.5rem;
+        text-align:center;
+        font-style: Arial
+        Verdana;
+        ul{
+         //   margin-top:2rem;
+            padding:3rem;
+            list-style: none;
+            li{
+                &:not(:last-child){
+                    border-bottom:dotted;
+                }
+                
+            }
+        }
+    }
+    &__link{
+      display: inline-block;
+      margin-top: 10rem;
+      margin-left: 8rem;
+      padding:1rem;
+        text-decoration: none;
+        color:white;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        background-color: rgb(92, 16, 92);
+        border-radius: 2rem;
+        box-shadow: 1rem 1rem 1.5rem $color5;
+        transition: all .3s;
+        &:hover{
+            z-index: 30;
+           
+        }
+    }
+   
+}

@@ -1,0 +1,15 @@
+.header{
+    height: 100vh;
+    background-image:linear-gradient(to right,rgba(208,246,246,0.8),rgba(170,226,243,0.8)),url(images/paris1.jpg);
+    background-size: cover;
+    background-position: top;
+
+    &__text-box{
+        position: absolute;
+        top:30%;
+        left:30%;
+        text-transform: (-50%,-50%);
+        text-align:center;
+    }
+}
+

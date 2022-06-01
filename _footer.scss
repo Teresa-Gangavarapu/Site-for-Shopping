@@ -1,0 +1,109 @@
+.logo-image{
+    width: 10%;
+    height:10%;
+    margin-left:68rem;
+    margin-top: 6rem;
+}
+.header7{
+   // margin-left:15rem;
+    font-size:3rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    background-image:linear-gradient(to right,rgba(255, 255, 255, 1) ,rgba(0, 124, 219, 1));
+    -webkit-background-clip: text;
+    color:transparent;
+    margin-bottom: 3rem;
+   
+}
+.lists{
+    list-style: none;
+    border-top:2px solid white;
+    margin-top:6rem;
+   padding-top: 2rem;
+   display: inline-block;
+  
+    &__1{
+        
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        transition: all .3s;
+        
+       &:not(:last-child){
+        margin-right:1.6rem;
+       }
+    &:hover{
+         
+        background-color:rgb(253, 253, 253);
+        border-radius: 3px;
+        transform: rotate(2deg) scale(1.1);
+    }
+       
+    }
+    &__link{
+        text-decoration: none;
+        color:rgb(241, 233, 233);
+        transition: all .3s;
+        
+       &:hover{
+           color:black;
+           
+       }
+      &--icon{
+          position: fixed;
+      }
+       
+    }
+}
+.copyright{
+    margin-top:6rem;
+    color:rgba(0, 124, 219, 1);
+    font-size: 1.8rem;
+    border-top:2px solid white;
+    padding-top:2rem;
+    
+    &__link{
+        text-decoration: none;
+        color:rgb(241, 233, 233);
+        transition: all .3s;
+        display: inline-block;
+       &:hover{
+           color:black;
+             
+        background-color:rgb(253, 253, 253);
+        border-radius: 3px;
+        transform: rotate(2deg) scale(1.1);
+       }
+    }
+}
+.top{
+  
+    text-decoration: none;
+   // position: relative;
+   background-color:rgba(0, 124, 219, 1);
+   height:6rem;
+   width:6rem;
+   border-radius: 50%;
+   position: fixed;
+   left:91%;
+    top:85%;
+  
+   
+    
+    &__icon{
+       color:white;
+       font-size: 6rem;
+       
+     text-align: center;
+     display: inline-block;
+    margin-top:-1rem;
+    
+    transition: all .4s;
+    &:hover{
+        transform: scale(1.1);
+    }
+     
+    }
+   
+}
